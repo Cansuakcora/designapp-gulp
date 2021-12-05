@@ -1,0 +1,191 @@
+.thankyou-left-box {
+    box-shadow: 1px 1px 3px #00000080;
+    border-radius: 21px;
+    background-color: $color-white;
+    padding: 2rem 0 2rem 2rem;
+    width: 100%;
+    max-width: 580px;
+
+    @include media991 {
+        margin: 0 auto;
+    }
+
+    @include media766 {
+        padding: 1rem;
+    }
+
+    &__hr {
+        background-color: $color-green-2;
+        width: 10px;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+
+    &__pstn {
+        margin-left: 1rem;
+
+        @include media766 {
+            margin-left: 0;
+        }
+    }
+
+    &__title {
+        color: $color-blue-3;
+        font-family: 'SharpSansExtraBold', sans-serif;
+        margin: 0 0  1.5rem;
+
+        @include media766 {
+            text-align: center;
+        }
+    }
+
+    &__all {
+        display: flex;
+    }
+
+    &__subtitle {
+        font-family: 'SharpSansSemibold', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        // margin-top: 1rem;
+
+        @include media766 {
+            text-align: center;
+        }
+    }
+
+    
+    &__subtitle-btm {
+        font-family: 'SharpSansSemibold', sans-serif;
+        font-size: 15px;
+        margin-bottom: 1rem;
+
+        @include media766 {
+            text-align: center;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        justify-content: space-between;
+        margin-left: 1rem;
+
+        @include media766 {
+            flex-direction: column;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+    }
+
+    &__date {
+        color: $color-blue-3;
+        font-family: 'SharpSansExtraBold', sans-serif;
+        margin:0;
+    }
+
+    &__time {
+        color: $color-blue-3;
+        font-family: 'SharpSansExtraBold', sans-serif;
+        margin:0;
+    }
+
+    &__date-pstn {
+        display: flex;
+        align-items: center;
+
+        @include media766 {
+            flex-direction: column;
+            margin: .5rem 0;
+        }
+
+    }
+
+    &__calendar-icon {
+        width: 100%;
+        max-width: 40px;
+        margin-right: .5rem;
+    }
+}
+
+.thankyou-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 500px;
+
+    @include media-min1600 {
+        max-width: 560px;
+    }
+
+    @include media766 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        margin-top: 3rem !important;
+
+        @include media766 {
+            margin-top: 1.5rem !important;
+        }
+    }
+}
+
+.thankyou-speaker{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: .4rem;
+
+    @include media766{
+        flex-direction: column;
+    }
+
+    &__img{
+        width: 100%;
+        max-width: 90px;
+        margin-right: 1rem;
+    }
+
+    &__date{
+        color: $color-blue-3;
+        font-family: 'SharpSansBold' ,sans-serif;
+        margin-bottom: 0;
+
+        @include media766{
+            margin-top: .5rem;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    &__title{
+        font-family: 'SharpSansExtrabolditalic' ,sans-serif;
+        color: $color-blue-3;
+        font-size: 20px;
+        // font-style: italic;
+        line-height: 1.5rem;
+        margin-bottom: 0;
+
+        @include media766{
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    &__name{
+        color: $color-blue-3;
+        font-family: 'SharpSansBold' ,sans-serif;
+        margin-top: .3rem;
+
+        @include media766{
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

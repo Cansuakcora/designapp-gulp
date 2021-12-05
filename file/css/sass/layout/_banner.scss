@@ -1,0 +1,137 @@
+.banner {
+    position: relative;
+
+    .container {
+
+        @include media-min1600 {
+            max-width: 1260px;
+        }
+
+        @include media-min1800 {
+            max-width: 1400px;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 240px;
+        margin-bottom: 3rem;
+        margin-right: 13%;
+
+        @include media-min1800{
+            max-width: 260px;
+            margin-right: 15%;
+        }
+
+        @include media992 {
+            margin-right: 0;
+        }
+    }
+
+    &__right-logo {
+        width: 100%;
+        max-width: 500px;
+
+        @include media-min1400{
+            max-width: 520px;
+        }
+
+        @include media-min1600{
+            max-width: 570px;
+        }
+    }
+
+    &__img-pstn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include min-media996{
+            margin-top: 3rem;
+        }
+    }
+
+    &__register-btn {
+        width: 100%;
+        max-width: 230px;
+        margin-top: 3rem;
+        cursor: pointer;
+        transition: all .5s;
+        z-index: 2;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        @include media-min1600{
+            max-width: 270px;
+        }
+    }
+
+    &__login-btn {
+        width: 100%;
+        max-width: 230px;
+        margin-top: 1.5rem;
+        cursor: pointer;
+        transition: all .5s;
+        z-index: 2;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        @include media-min1600{
+            max-width: 270px;
+        }
+    }
+
+    &__video{
+        width: 100%;
+        // max-width: 500px;
+
+        // @include media-min1400{
+        //     max-width: 550px;
+        // }
+
+        // @include media-min1600{
+        //     max-width: 600px;
+        // }
+
+        @include media992 {
+          margin: 0 auto;
+        }
+
+    }
+
+    &__footer{
+       
+        position: absolute;
+        left: 2%;
+        bottom: 2%;
+
+        &-text{
+            color: $color-white;
+            font-size: 13px;
+            font-family: 'SharpSansSemibold' ,sans-serif;
+        }
+
+        @include media766{
+            bottom: 1%;
+        }
+    }
+
+}
+
+.video-js.vjs-fluid{
+    max-width: 406px;
+    margin: 0 auto;
+
+    @include media-min1600{
+        max-width: 449px;
+    }
+
+    @include media-min1800{
+        max-width: 502px;
+    }
+}
+
